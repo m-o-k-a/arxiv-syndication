@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <link href="http://arxiv.org/api/query?search_query%3Dcat%3Acs.CL%26id_list%3D%26start%3D0%26max_results%3D10" rel="self" type="application/atom+xml"/>
+  <title type="html">ArXiv Query: search_query=cat:cs.CL&amp;id_list=&amp;start=0&amp;max_results=10</title>
+  <id>http://arxiv.org/api/2NuvLeTG5/DiDB8J+1CVLWN5mqg</id>
+  <updated>2020-03-11T00:00:00-04:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">17762</opensearch:totalResults>
+  <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
+  <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">10</opensearch:itemsPerPage>
+  <entry>
+    <id>http://arxiv.org/abs/2003.04887v1</id>
+    <updated>2020-03-10T17:58:01Z</updated>
+    <published>2020-03-10T17:58:01Z</published>
+    <title>ReZero is All You Need: Fast Convergence at Large Depth</title>
+    <summary>  Deep networks have enabled significant performance gains across domains, but
+they often suffer from vanishing/exploding gradients. This is especially true
+for Transformer architectures where depth beyond 12 layers is difficult to
+train without large datasets and computational budgets. In general, we find
+that inefficient signal propagation impedes learning in deep networks. In
+Transformers, multi-head self-attention is the main cause of this poor signal
+propagation. To facilitate deep signal propagation, we propose ReZero, a simple
+change to the architecture that initializes an arbitrary layer as the identity
+map, using a single additional learned parameter per layer. We apply this
+technique to language modeling and find that we can easily train
+ReZero-Transformer networks over a hundred layers. When applied to 12 layer
+Transformers, ReZero converges 56% faster on enwiki8. ReZero applies beyond
+Transformers to other residual networks, enabling 1,500% faster convergence for
+deep fully connected networks and 32% faster convergence for a ResNet-56
+trained on CIFAR 10.
+</summary>
+    <author>
+      <name>Thomas Bachlechner</name>
+    </author>
+    <author>
+      <name>Bodhisattwa Prasad Majumder</name>
+    </author>
+    <author>
+      <name>Huanru Henry Mao</name>
+    </author>
+    <author>
+      <name>Garrison W. Cottrell</name>
+    </author>
+    <author>
+      <name>Julian McAuley</name>
+    </author>
+
+    <link href="http://arxiv.org/abs/2003.04887v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2003.04887v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2003.04866v1</id>
+    <updated>2020-03-10T17:17:01Z</updated>
+    <published>2020-03-10T17:17:01Z</published>
+    <title>Multi-SimLex: A Large-Scale Evaluation of Multilingual and Cross-Lingual
+  Lexical Semantic Similarity</title>
+    <summary>  We introduce Multi-SimLex, a large-scale lexical resource and evaluation
+benchmark covering datasets for 12 typologically diverse languages, including
+major languages (e.g., Mandarin Chinese, Spanish, Russian) as well as
+less-resourced ones (e.g., Welsh, Kiswahili). Each language dataset is
+annotated for the lexical relation of semantic similarity and contains 1,888
+semantically aligned concept pairs, providing a representative coverage of word
+classes (nouns, verbs, adjectives, adverbs), frequency ranks, similarity
+intervals, lexical fields, and concreteness levels. Additionally, owing to the
+alignment of concepts across languages, we provide a suite of 66 cross-lingual
+semantic similarity datasets. Due to its extensive size and language coverage,
+Multi-SimLex provides entirely novel opportunities for experimental evaluation
+and analysis. On its monolingual and cross-lingual benchmarks, we evaluate and
+analyze a wide array of recent state-of-the-art monolingual and cross-lingual
+representation models, including static and contextualized word embeddings
+(such as fastText, M-BERT and XLM), externally informed lexical
+representations, as well as fully unsupervised and (weakly) supervised
+cross-lingual word embeddings. We also present a step-by-step dataset creation
+protocol for creating consistent, Multi-Simlex-style resources for additional
+languages. We make these contributions -- the public release of Multi-SimLex
+datasets, their creation protocol, strong baseline results, and in-depth
+analyses which can be be helpful in guiding future developments in multilingual
+lexical semantics and representation learning -- available via a website which
+will encourage community effort in further expansion of Multi-Simlex to many
+more languages. Such a large-scale semantic resource could inspire significant
+further advances in NLP across languages.
+</summary>
+    <author>
+      <name>Ivan Vulić</name>
+    </author>
+    <author>
+      <name>Simon Baker</name>
+    </author>
+    <author>
+      <name>Edoardo Maria Ponti</name>
+    </author>
+    <author>
+      <name>Ulla Petti</name>
+    </author>
+    <author>
+      <name>Ira Leviant</name>
+    </author>
+    <author>
+      <name>Kelly Wing</name>
+    </author>
+    <author>
+      <name>Olga Majewska</name>
+    </author>
+    <author>
+      <name>Eden Bar</name>
+    </author>
+    <author>
+      <name>Matt Malone</name>
+    </author>
+    <author>
+      <name>Thierry Poibeau</name>
+    </author>
+    <author>
+      <name>Roi Reichart</name>
+    </author>
+    <author>
+      <name>Anna Korhonen</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Data and guidelines available at https://multisimlex.com/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2003.04866v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2003.04866v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2003.04865v1</id>
+    <updated>2020-03-10T17:15:48Z</updated>
+    <published>2020-03-10T17:15:48Z</published>
+    <title>Video Caption Dataset for Describing Human Actions in Japanese</title>
+    <summary>  In recent years, automatic video caption generation has attracted
+considerable attention. This paper focuses on the generation of Japanese
+captions for describing human actions. While most currently available video
+caption datasets have been constructed for English, there is no equivalent
+Japanese dataset. To address this, we constructed a large-scale Japanese video
+caption dataset consisting of 79,822 videos and 399,233 captions. Each caption
+in our dataset describes a video in the form of "who does what and where." To
+describe human actions, it is important to identify the details of a person,
+place, and action. Indeed, when we describe human actions, we usually mention
+the scene, person, and action. In our experiments, we evaluated two caption
+generation methods to obtain benchmark results. Further, we investigated
+whether those generation methods could specify "who does what and where."
+</summary>
+    <author>
+      <name>Yutaro Shigeto</name>
+    </author>
+    <author>
+      <name>Yuya Yoshikawa</name>
+    </author>
+    <author>
+      <name>Jiaqing Lin</name>
+    </author>
+    <author>
+      <name>Akikazu Takeuchi</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Accepted for LREC 2020. Dataset available at
+  https://actions.stair.center/captions.html</arxiv:comment>
+    <link href="http://arxiv.org/abs/2003.04865v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2003.04865v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2003.04807v1</id>
+    <updated>2020-03-10T15:33:54Z</updated>
+    <published>2020-03-10T15:33:54Z</published>
+    <title>Efficient Intent Detection with Dual Sentence Encoders</title>
+    <summary>  Building conversational systems in new domains and with added functionality
+requires resource-efficient models that work under low-data regimes (i.e., in
+few-shot setups). Motivated by these requirements, we introduce intent
+detection methods backed by pretrained dual sentence encoders such as USE and
+ConveRT. We demonstrate the usefulness and wide applicability of the proposed
+intent detectors, showing that: 1) they outperform intent detectors based on
+fine-tuning the full BERT-Large model or using BERT as a fixed black-box
+encoder on three diverse intent detection data sets; 2) the gains are
+especially pronounced in few-shot setups (i.e., with only 10 or 30 annotated
+examples per intent); 3) our intent detectors can be trained in a matter of
+minutes on a single CPU; and 4) they are stable across different hyperparameter
+settings. In hope of facilitating and democratizing research focused on
+intention detection, we release our code, as well as a new challenging
+single-domain intent detection dataset comprising 13,083 annotated examples
+over 77 intents.
+</summary>
+    <author>
+      <name>Iñigo Casanueva</name>
+    </author>
+    <author>
+      <name>Tadas Temčinas</name>
+    </author>
+    <author>
+      <name>Daniela Gerz</name>
+    </author>
+    <author>
+      <name>Matthew Henderson</name>
+    </author>
+    <author>
+      <name>Ivan Vulić</name>
+    </author>
+    <link href="http://arxiv.org/abs/2003.04807v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2003.04807v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2003.04748v1</id>
+    <updated>2020-03-10T14:06:55Z</updated>
+    <published>2020-03-10T14:06:55Z</published>
+    <title>On the coexistence of competing languages</title>
+    <summary>  We investigate the evolution of competing languages, a subject where much
+previous literature suggests that the outcome is always the domination of one
+language over all the others. Since coexistence of languages is observed in
+reality, we here revisit the question of language competition, with an emphasis
+on uncovering the ways in which coexistence might emerge. We find that this
+emergence is related to symmetry breaking, and explore two particular scenarios
+-- the first relating to an imbalance in the population dynamics of language
+speakers in a single geographical area, and the second to do with spatial
+heterogeneity, where language preferences are specific to different
+geographical regions. For each of these, the investigation of paradigmatic
+situations leads us to a quantitative understanding of the conditions leading
+to language coexistence. We also obtain predictions of the number of surviving
+languages as a function of various model parameters.
+</summary>
+    <author>
+      <name>Jean-Marc Luck</name>
+    </author>
+    <author>
+      <name>Anita Mehta</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">18 pages, 12 figures, 47 references. To appear in EPJ B</arxiv:comment>
+    <link href="http://arxiv.org/abs/2003.04748v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2003.04748v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cond-mat.stat-mech" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.stat-mech" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2003.04679v1</id>
+    <updated>2020-03-10T13:10:26Z</updated>
+    <published>2020-03-10T13:10:26Z</published>
+    <title>Learning to Respond with Stickers: A Framework of Unifying
+  Multi-Modality in Multi-Turn Dialog</title>
+    <summary>  Stickers with vivid and engaging expressions are becoming increasingly
+popular in online messaging apps, and some works are dedicated to automatically
+select sticker response by matching text labels of stickers with previous
+utterances. However, due to their large quantities, it is impractical to
+require text labels for the all stickers. Hence, in this paper, we propose to
+recommend an appropriate sticker to user based on multi-turn dialog context
+history without any external labels. Two main challenges are confronted in this
+task. One is to learn semantic meaning of stickers without corresponding text
+labels. Another challenge is to jointly model the candidate sticker with the
+multi-turn dialog context. To tackle these challenges, we propose a sticker
+response selector (SRS) model. Specifically, SRS first employs a convolutional
+based sticker image encoder and a self-attention based multi-turn dialog
+encoder to obtain the representation of stickers and utterances. Next, deep
+interaction network is proposed to conduct deep matching between the sticker
+with each utterance in the dialog history. SRS then learns the short-term and
+long-term dependency between all interaction results by a fusion network to
+output the the final matching score. To evaluate our proposed method, we
+collect a large-scale real-world dialog dataset with stickers from one of the
+most popular online chatting platform. Extensive experiments conducted on this
+dataset show that our model achieves the state-of-the-art performance for all
+commonly-used metrics. Experiments also verify the effectiveness of each
+component of SRS. To facilitate further research in sticker selection field, we
+release this dataset of 340K multi-turn dialog and sticker pairs.
+</summary>
+    <author>
+      <name>Shen Gao</name>
+    </author>
+    <author>
+      <name>Xiuying Chen</name>
+    </author>
+    <author>
+      <name>Chang Liu</name>
+    </author>
+    <author>
+      <name>Li Liu</name>
+    </author>
+    <author>
+      <name>Dongyan Zhao</name>
+    </author>
+    <author>
+      <name>Rui Yan</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Accepted by The Web Conference 2020 (WWW 2020). Equal contribution
+  from first two authors. Dataset and code are released at
+  https://github.com/gsh199449/stickerchat</arxiv:comment>
+    <link href="http://arxiv.org/abs/2003.04679v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2003.04679v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2003.04642v1</id>
+    <updated>2020-03-10T11:30:22Z</updated>
+    <published>2020-03-10T11:30:22Z</published>
+    <title>A Framework for Evaluation of Machine Reading Comprehension Gold
+  Standards</title>
+    <summary>  Machine Reading Comprehension (MRC) is the task of answering a question over
+a paragraph of text. While neural MRC systems gain popularity and achieve
+noticeable performance, issues are being raised with the methodology used to
+establish their performance, particularly concerning the data design of gold
+standards that are used to evaluate them. There is but a limited understanding
+of the challenges present in this data, which makes it hard to draw comparisons
+and formulate reliable hypotheses. As a first step towards alleviating the
+problem, this paper proposes a unifying framework to systematically investigate
+the present linguistic features, required reasoning and background knowledge
+and factual correctness on one hand, and the presence of lexical cues as a
+lower bound for the requirement of understanding on the other hand. We propose
+a qualitative annotation schema for the first and a set of approximative
+metrics for the latter. In a first application of the framework, we analyse
+modern MRC gold standards and present our findings: the absence of features
+that contribute towards lexical ambiguity, the varying factual correctness of
+the expected answers and the presence of lexical cues, all of which potentially
+lower the reading comprehension complexity and quality of the evaluation data.
+</summary>
+    <author>
+      <name>Viktor Schlegel</name>
+    </author>
+    <author>
+      <name>Marco Valentino</name>
+    </author>
+    <author>
+      <name>André Freitas</name>
+    </author>
+    <author>
+      <name>Goran Nenadic</name>
+    </author>
+    <author>
+      <name>Riza Batista-Navarro</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">In Proceedings of the 12th International Conference on Language
+  Resources and Evaluation (LREC 2020)</arxiv:comment>
+    <link href="http://arxiv.org/abs/2003.04642v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2003.04642v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2003.04567v1</id>
+    <updated>2020-03-10T08:24:41Z</updated>
+    <published>2020-03-10T08:24:41Z</published>
+    <title>Ecological Semantics: Programming Environments for Situated Language
+  Understanding</title>
+    <summary>  Large-scale natural language understanding (NLU) systems have made impressive
+progress: they can be applied flexibly across a variety of tasks, and employ
+minimal structural assumptions. However, extensive empirical research has shown
+this to be a double-edged sword, coming at the cost of shallow understanding:
+inferior generalization, grounding and explainability. Grounded language
+learning approaches offer the promise of deeper understanding by situating
+learning in richer, more structured training environments, but are limited in
+scale to relatively narrow, predefined domains. How might we enjoy the best of
+both worlds: grounded, general NLU? Following extensive contemporary cognitive
+science, we propose treating environments as ``first-class citizens'' in
+semantic representations, worthy of research and development in their own
+right. Importantly, models should also be partners in the creation and
+configuration of environments, rather than just actors within them, as in
+existing approaches. To do so, we argue that models must begin to understand
+and program in the language of affordances (which define possible actions in a
+given situation) both for online, situated discourse comprehension, as well as
+large-scale, offline common-sense knowledge mining. To this end we propose an
+environment-oriented ecological semantics, outlining theoretical and practical
+approaches towards implementation. We further provide actual demonstrations
+building upon interactive fiction programming languages.
+</summary>
+    <author>
+      <name>Ronen Tamari</name>
+    </author>
+    <author>
+      <name>Gabriel Stanovsky</name>
+    </author>
+    <author>
+      <name>Dafna Shahaf</name>
+    </author>
+    <author>
+      <name>Reut Tsarfaty</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">Accepted to Bridging AI and Cognitive Science (BAICS) workshop at
+  ICLR2020. For interactive demos, see https://eco-sem.github.io/</arxiv:comment>
+    <link href="http://arxiv.org/abs/2003.04567v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2003.04567v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2003.04419v1</id>
+    <updated>2020-03-09T21:30:55Z</updated>
+    <published>2020-03-09T21:30:55Z</published>
+    <title>Combining Pretrained High-Resource Embeddings and Subword
+  Representations for Low-Resource Languages</title>
+    <summary>  The contrast between the need for large amounts of data for current Natural
+Language Processing (NLP) techniques, and the lack thereof, is accentuated in
+the case of African languages, most of which are considered low-resource. To
+help circumvent this issue, we explore techniques exploiting the qualities of
+morphologically rich languages (MRLs), while leveraging pretrained word vectors
+in well-resourced languages. In our exploration, we show that a meta-embedding
+approach combining both pretrained and morphologically-informed word embeddings
+performs best in the downstream task of Xhosa-English translation.
+</summary>
+    <author>
+      <name>Machel Reid</name>
+    </author>
+    <author>
+      <name>Edison Marrese-Taylor</name>
+    </author>
+    <author>
+      <name>Yutaka Matsuo</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">To appear at ICLR (International Conference of Learning
+  Representations) 2020 Africa NLP Workshop</arxiv:comment>
+    <link href="http://arxiv.org/abs/2003.04419v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2003.04419v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2003.04195v1</id>
+    <updated>2020-03-09T15:20:21Z</updated>
+    <published>2020-03-09T15:20:21Z</published>
+    <title>An Empirical Investigation of Pre-Trained Transformer Language Models
+  for Open-Domain Dialogue Generation</title>
+    <summary>  We present an empirical investigation of pre-trained Transformer-based
+auto-regressive language models for the task of open-domain dialogue
+generation. Training paradigm of pre-training and fine-tuning is employed to
+conduct the parameter learning. Corpora of News and Wikipedia in Chinese and
+English are collected for the pre-training stage respectively. Dialogue context
+and response are concatenated into a single sequence utilized as the input of
+the models during the fine-tuning stage. A weighted joint prediction paradigm
+for both context and response is designed to evaluate the performance of models
+with or without the loss term for context prediction. Various of decoding
+strategies such as greedy search, beam search, top-k sampling, etc. are
+employed to conduct the response text generation. Extensive experiments are
+conducted on the typical single-turn and multi-turn dialogue corpora such as
+Weibo, Douban, Reddit, DailyDialog, and Persona-Chat. Detailed numbers of
+automatic evaluation metrics on relevance and diversity of the generated
+results for the languages models as well as the baseline approaches are
+reported.
+</summary>
+    <author>
+      <name>Piji Li</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">26 pages</arxiv:comment>
+    <link href="http://arxiv.org/abs/2003.04195v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/2003.04195v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+</feed>

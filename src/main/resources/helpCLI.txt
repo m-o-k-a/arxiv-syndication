@@ -1,0 +1,44 @@
+List of commands :
+list :
+	 -c [category] : search articles in the specified category
+	 -au [author] : search articles written by the specified author
+	 -ti [word] : search articles with the specified word in the title
+	 -kw [keyWord] : search articles with the specified keyWord in all fields
+	 -m [max number of results] : the maximum number of articles you want to have
+	 -from [date] : search articles from the specified date (date format : YYYY-MM-DD or today, yesterday, this-month, this-year)
+	 -to [date] : search articles to the specified date (date format : YYYY-MM-DD or today, yesterday, this-month, this-year)
+
+read [x] : read a specific article where x correspond to the index of it
+
+select [x] [x] ... : select the articles specidied by the arguments
+
+clear : clear the current selection
+
+download path/default : save the articles at the specified path or at the path prefered (default)
+	 -c [category] : download articles in the specified category
+	 -au [author] : download articles written by the specified author
+	 -ti [word] : download articles with the specified word in the title
+	 -m [max number of results] : the maximum number of articles you want to download
+	 -from [date] : download articles from the specified date (date format : YYYY-MM-DD or today, yesterday, this-month, this-year)
+	 -to [date] : download articles to the specified date (date format : YYYY-MM-DD or today, yesterday, this-month, this-year)
+download path/default [x] : save the article at the specified path or at the path prefered (default)
+download path/default : save the selected articles to the specified path or at the path prefered (default)
+
+preferences : to set your preferences
+	 -maxA [max number of results] : set your favorite number of articles
+	 -c [category] : set your favorite category
+	 -dl [path] : set your favorite path to download your articles
+
+fav :
+	 -a : add the selected articles to favorite
+	 -a [x] : add the specified article to favorite
+     -r : remove the selected articles from favorite
+     -r [x] : remove the specified article from favorite
+     -s : print the list of your favorite articles
+
+stat :
+    -date : print the number of published article by date in the current article list
+    -cat : print the number of published article by category in the current article list
+    -au [x]: print the x most published authors in the current article list
+
+exit : close the application
