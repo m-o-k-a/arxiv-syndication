@@ -274,7 +274,7 @@ public class ArxivOrgController implements Initializable {
         specialSearch.setPrefHeight(20); specialSearch.setMinHeight(20); specialSearch.setMaxHeight(20);
         TextFlow statsBox = new TextFlow();
         statsBox.getChildren().add(new Text("2020 - Year 2 Computer Science Licence at Aix-Marseille University\n" +
-                "Project done by Eddy Ikhlef - Eunsun YUn - Yann Forner - Jeremy Gau\n\n-----\n\n<Authors, Keywords search>\n" +
+                "ArxivOrg V1.0.0\nProject done by Eddy Ikhlef - Eunsun YUn - Yann Forner - Jeremy Gau\n\n-----\n\n<Authors, Keywords search>\n" +
                 "To start a query, the field have to end with a coma (,) or a next line (Enter)"));
         setScrollSubMenu(statsBox);
     }
