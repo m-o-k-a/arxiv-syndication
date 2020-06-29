@@ -117,7 +117,7 @@
                    </Menu>
                     <Menu fx:id="menuFavorite" mnemonicParsing="false">
                         <graphic>
-                            <Label fx:id="selectFavorite" text="Favorites" onMouseClicked="#getFavorites" />
+                            <Label fx:id="selectFavorite" onMouseClicked="#getFavorites" text="Favorites" />
                         </graphic>
                     </Menu>
                   <Menu fx:id="menuPref" mnemonicParsing="false">
@@ -136,21 +136,27 @@
                           <Label onMouseClicked="#getStats" text="Statistics" />
                       </graphic>
                   </Menu>
+                  <Menu disable="true" mnemonicParsing="false" text="|" />
+                  <Menu fx:id="menuSelAll1" mnemonicParsing="false">
+                     <graphic>
+                        <Label fx:id="menuHelp" onMouseClicked="#getHelp" text="?" />
+                     </graphic>
+                  </Menu>
                </menus>
             </MenuBar>
                 <HBox fx:id="specialSearch" maxHeight="0" minHeight="0" prefHeight="0" />
                 <ListView fx:id="contentPane" maxHeight="1.7976931348623157E308" onMouseClicked="#handleMouseClick" prefHeight="720.0" prefWidth="1081.0" VBox.vgrow="ALWAYS" />
             </VBox>
-         <AnchorPane minHeight="100.0" prefHeight="200.0" prefWidth="200.0">
+         <AnchorPane minHeight="100.0" prefHeight="295.0" prefWidth="1079.0">
             <children>
-               <ScrollPane fx:id="infoPane" fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308" prefHeight="356.0" prefWidth="1081.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+               <ScrollPane fx:id="infoPane" fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308" prefHeight="337.0" prefWidth="1079.0" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
                   <content>
-                     <TextFlow fx:id="infoText" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="333.0" prefWidth="1072.0" />
+                     <TextFlow fx:id="infoText" prefHeight="200.0" prefWidth="936.0" />
                   </content>
                </ScrollPane>
                <HBox prefHeight="0.0" prefWidth="100.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
                   <children>
-                     <CheckBox fx:id="favoriteCheckBox" disable="true" mnemonicParsing="false" text="Favorite" onAction="#updateFavorite" />
+                     <CheckBox fx:id="favoriteCheckBox" disable="true" mnemonicParsing="false" onAction="#updateFavorite" text="Favorite" />
                   </children>
                </HBox>
                <HBox alignment="TOP_RIGHT" prefHeight="23.0" prefWidth="291.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="0.0">

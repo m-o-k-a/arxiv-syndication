@@ -203,8 +203,7 @@ public class ArxivOrgController implements Initializable {
 
     @FXML private void getStats() {
         disableArticleAction();
-        isFromAuthor = false;
-        isFavorite = false;
+        isFromAuthor = false; isFavorite = false;
         if(primaryWindow.getChildren().contains(subMenu)) { primaryWindow.getChildren().remove(subMenu); }
         Stats stats = new Stats(articles);
         contentPane.getItems().clear();
@@ -227,8 +226,7 @@ public class ArxivOrgController implements Initializable {
 
     @FXML private void getPreferences() {
         disableArticleAction();
-        isFromAuthor = false;
-        isFavorite = false;
+        isFromAuthor = false; isFavorite = false;
         if(primaryWindow.getChildren().contains(subMenu)) { primaryWindow.getChildren().remove(subMenu); }
         contentPane.getItems().clear();
         specialSearch.getChildren().clear();
@@ -259,6 +257,26 @@ public class ArxivOrgController implements Initializable {
         prefBox.getChildren().add(save);
         save.setOnAction(this::savePreferences);
         setScrollSubMenu(prefBox);
+    }
+
+    @FXML private void getHelp() {
+        disableArticleAction();
+        isFromAuthor = false; isFavorite = false;
+        if(primaryWindow.getChildren().contains(subMenu)) { primaryWindow.getChildren().remove(subMenu); }
+        Stats stats = new Stats(articles);
+        contentPane.getItems().clear();
+        specialSearch.getChildren().clear();
+        selectedAuthorArticles.clear();
+        Hyperlink textAuthor = new Hyperlink("<- Back to complete results");
+        textAuthor.setOnAction(getFullSearch);
+        specialSearch.getChildren().add(textAuthor);
+        specialSearch.getChildren().add(new Text("Help"));
+        specialSearch.setPrefHeight(20); specialSearch.setMinHeight(20); specialSearch.setMaxHeight(20);
+        TextFlow statsBox = new TextFlow();
+        statsBox.getChildren().add(new Text("2020 - Year 2 Computer Science Licence at Aix-Marseille University\n" +
+                "Project done by Eddy Ikhlef - Eunsun YUn - Yann Forner - Jeremy Gau\n\n-----\n\n<Authors, Keywords search>\n" +
+                "To start a query, the field have to end with a coma (,) or a next line (Enter)"));
+        setScrollSubMenu(statsBox);
     }
 
     private void setScrollSubMenu(TextFlow box) {
