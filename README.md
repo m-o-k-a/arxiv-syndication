@@ -1,13 +1,10 @@
 # ArxivOrg
-
-Ceci est le projet de base pour l'UE Projet: initiation génie logicielle.
-
-Vous devrez développer le logiciel de zéro afin de construire 
-un logiciel de syndication de contenu provenant de l'archive ouverte arXiv.
+(From year 2 computer science at Aix-Marseille University)
+A content syndication software using the open archive arXiv.
 
 <hr>
 
-### Membres
+### Members
 
 - EDDY IKHLEF
 - EUNSUN YUN

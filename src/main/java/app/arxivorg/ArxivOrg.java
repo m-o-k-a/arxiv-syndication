@@ -13,7 +13,7 @@ public class ArxivOrg extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/app/arxivorg/view/arxivorg.fxml"));
-        primaryStage.setTitle("ArxivOrg");
+        primaryStage.setTitle("SyndicArxiv - A Syndication Software For ArXiv.org | v1.1.2");
         primaryStage.setScene(new Scene(root));
         primaryStage.setMinHeight(480);
         primaryStage.setMinWidth(640);
